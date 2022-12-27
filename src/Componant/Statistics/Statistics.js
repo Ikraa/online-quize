@@ -1,13 +1,13 @@
 import React from 'react';
 import Nav from '../Nav/Nav';
 
-const Blog = () => {
+const Statistics = () => {
     return (
         <div>
             <Nav/>
-            <h1 className='text-3xl'>This Is Blog</h1>
+            <h1 className='text-3xl'>Statistics</h1>
         </div>
     );
 };
 
-export default Blog;
+export default Statistics;
