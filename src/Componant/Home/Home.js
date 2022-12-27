@@ -16,10 +16,10 @@ const Home = () => {
       {/* <Header /> */}
       
 
-      <section className="">
-        <div className="grid grid-cols-3 mx-auto mt-5">
+      <section className="w-[90%] mx-auto ">
+        <div className="grid grid-cols-3 gap-3  mx-auto mt-5">
           {questions?.map((item, i) => (
-            <QuizeCard quizeData={item} />
+            <QuizeCard quizeData={item} i={i} />
           ))}
         </div>
       </section>

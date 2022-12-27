@@ -6,18 +6,32 @@ const Nav = () => {
     <div>
       <div className="navbar bg-purple-400 text-black">
         <div className="flex-1">
-          <Link style={{fontWeight:"500",cursor:"pointer"}} className="btn btn-ghost normal-case text-xl">
+          <Link
+            style={{ fontWeight: "500", cursor: "pointer" }}
+            className="btn btn-ghost normal-case text-xl"
+          >
             Online Quiz Practice
           </Link>
         </div>
         <div className="flex-none">
           <ul className="menu menu-horizontal px-1">
             <li>
-              <Link style={{fontWeight:"500",cursor:"pointer"}} to="/home">Home</Link>
-              <Link style={{fontWeight:"500",cursor:"pointer"}} to="/statistics">Statistics</Link>
+              <Link style={{ fontWeight: "500", cursor: "pointer" }} to="/home">
+                Home
+              </Link>
+              <Link
+                style={{ fontWeight: "500", cursor: "pointer" }}
+                to="/statistics"
+              >
+                Statistics
+              </Link>
             </li>
             <li tabIndex={0}>
-              <Link style={{fontWeight:"500",cursor:"pointer"}} to="/home" title="select any topic">
+              <Link
+                style={{ fontWeight: "500", cursor: "pointer" }}
+                to="/home"
+                title="select any topic"
+              >
                 Topics
                 <svg
                   className="fill-current"
@@ -31,15 +45,21 @@ const Nav = () => {
               </Link>
               <ul className="p-2 bg-base-100">
                 <li>
-                  <Link style={{fontWeight:"500",cursor:"pointer"}} to="">Submenu 1</Link>
+                  <Link style={{ fontWeight: "500", cursor: "pointer" }} to="">
+                    Submenu 1
+                  </Link>
                 </li>
                 <li>
-                  <Link style={{fontWeight:"500",cursor:"pointer"}} to="">Submenu 2</Link>
+                  <Link style={{ fontWeight: "500", cursor: "pointer" }} to="">
+                    Submenu 2
+                  </Link>
                 </li>
               </ul>
             </li>
             <li>
-              <Link style={{fontWeight:"500",cursor:"pointer"}} to="/blog">Blog</Link>
+              <Link style={{ fontWeight: "500", cursor: "pointer" }} to="/blog">
+                Blog
+              </Link>
             </li>
           </ul>
         </div>
