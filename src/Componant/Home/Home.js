@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import Footer from "../Footer/Footer";
 import Header from "../Header/Header";
 import Nav from "../Nav/Nav";
 import QuizeCard from "./QuizeCard";
@@ -22,6 +23,7 @@ const Home = () => {
           ))}
         </div>
       </section>
+      <Footer/>
     </div>
   );
 };
