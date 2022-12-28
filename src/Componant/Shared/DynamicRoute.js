@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { toast } from "react-toastify";
+import Nav from "../Nav/Nav";
 
 const DynamicRoute = () => {
   const { id } = useParams();
@@ -13,6 +14,8 @@ const DynamicRoute = () => {
   }, []);
   console.log(item, "=item log", id, "id");
   return (
+    <>
+    <Nav />
     <div className="bg-white w-[90%] mx-auto pb-12">
       <h3 className="text-center text-black font-bold pt-5">{item?.name}</h3>
 
@@ -74,6 +77,7 @@ const DynamicRoute = () => {
         ))}
       </div>
     </div>
+    </>
   );
 };
 

@@ -13,11 +13,10 @@ const Home = () => {
   return (
     <div>
       <Nav />
-      {/* <Header /> */}
-      
-
-      <section className="w-[90%] mx-auto ">
-        <div className="grid grid-cols-3 gap-3  mx-auto mt-5">
+      <Header />
+       <h1 className="text-center text-3xl font-bold my-16 text-black">Topics</h1>
+      <section id="topics" className="w-[90%] mx-auto ">
+        <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5  mx-auto mt-5">
           {questions?.map((item, i) => (
             <QuizeCard quizeData={item} i={i} />
           ))}

@@ -1,17 +1,19 @@
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 const Nav = () => {
   let activeStyle = {
     textDecoration: "underline",
-    color: "red",
+    color: "white", 
+    fontWeight:"bold"
   };
   return (
     <div>
       <div className="navbar bg-purple-400 text-black">
         <div className="flex-1">
           <Link
-            style={{ fontWeight: "500", cursor: "pointer" }}
+            style={{ fontWeight: "500", cursor: "pointer"}}
             // style={({ isActive }) => (isActive ? activeStyle : undefined)}
             className="btn btn-ghost normal-case text-xl"
           >
@@ -19,7 +21,7 @@ const Nav = () => {
           </Link>
         </div>
         <div className="flex-none">
-          <ul className="menu menu-horizontal px-1">
+          <ul className="menu menu-horizontal px-1 ">
             <li>
               <NavLink
                 style={({ isActive }) => (isActive ? activeStyle : undefined)}
@@ -34,14 +36,17 @@ const Nav = () => {
                 Statistics
               </NavLink>
             </li>
-            <li tabIndex={0}>
-              <NavLink
-                style={({ isActive }) => (isActive ? activeStyle : undefined)}
-                to="/home/topics"
+          
+            <li>
+              <HashLink 
+                // style={({ isActive }) => (isActive ? activeStyle : undefined)}
+                to="/#topics"
                 title="select any topic"
+                smooth
+                activeStyle={{ color: 'red' }}
               >
                 Topics
-              </NavLink>
+              </HashLink>
             </li>
             <li>
               <NavLink
