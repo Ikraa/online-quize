@@ -5,8 +5,7 @@ import Nav from '../Nav/Nav';
 const Main = () => {
     return (
         <div>
-            <Nav />
-            <Home></Home>
+            <Home/>
         </div>
     );
 };
