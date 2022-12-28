@@ -14,6 +14,8 @@ import Statistics from "./Componant/Statistics/Statistics";
 import 'react-toastify/dist/ReactToastify.css';
 import { ToastContainer } from "react-toastify";
 import Topics from "./Componant/Topics/Topics";
+import NotFound from "./Componant/NotFound/NotFound";
+
 function App() {
   const routerpath = createBrowserRouter([
     { path: "/", element: <Main /> },
@@ -22,6 +24,7 @@ function App() {
     { path: "/home/quize/:id", element: <DynamicRoute /> },
     { path: "/statistics", element: <Statistics /> },
     { path: "/blog", element: <Blog /> },
+    { path: "*", element: <NotFound /> },
   ]);
   return (
     <div>
