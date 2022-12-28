@@ -20,7 +20,7 @@ function App() {
   const routerpath = createBrowserRouter([
     { path: "/", element: <Main /> },
     { path: "/home", element: <Home /> },
-    { path: "/topics", element: <Topics/>},
+    // { path: "/topics", element: <Topics/>},
     { path: "/home/quize/:id", element: <DynamicRoute /> },
     { path: "/statistics", element: <Statistics /> },
     { path: "/blog", element: <Blog /> },
